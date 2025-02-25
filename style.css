@@ -1,0 +1,220 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #0a022f; /* Set background color to match the container */
+}
+
+/* Header Styling */
+header {
+    background-color: #0e0e29;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff7043;
+}
+
+/* General Section Styling */
+section {
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #36056a;
+    color: white;
+    font-size: 100%;
+}
+
+.container2 {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Optional: Add some gap between the square box and text */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #0a022f; /* Container background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 100%;
+    padding: 2rem; /* Adjust padding as needed */
+    width: 100%; /* Make sure the container uses full available width */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top of the container */
+    align-items: flex-start; /* Align text to the left */
+    width: 100%; /* Take up the full width available */
+    gap: 10px;
+}
+
+.text-container p {
+    width: 100%; /* Ensure paragraphs take up the full container width */
+    margin-bottom: 1rem; /* Optional: add space between paragraphs */
+}
+
+/* Styling for Home Section */
+#home {
+    background-color: #36056a;
+}
+
+#containerh1 {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+
+#containerh2 {
+    color: orange;
+    font-size: 100%;
+    text-align: left;
+}
+
+/* Styling for Home Section 2 */
+#homesection2 {
+    width: 100%; /* Ensure it takes full width */
+    margin: 0 auto;
+    text-align: left;
+    background-color: #0a022f; /* Same background as .container2 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 100%;
+    padding: 2rem; /* Adjust padding as needed */
+}
+
+.square-box {
+    width: 300px;
+    height: 300px;
+    background-color: #0a022f; /* Make sure the background color is valid */
+    border: 10px solid orange;
+    border-radius: 20px; /* Add this line to round the corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-box p {
+    color: black;
+}
+
+.about {
+    color: white;
+}
+
+.me {
+    color: orange;
+}
+
+/* Styling for the Contact Us button */
+.contact-btn {
+    display: inline-block;
+    background-color: orange; /* Orange color for the button */
+    color: black; /* White text color */
+    padding: 12px 20px; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 1.2rem;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Add space between paragraph and button */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.contact-btn:hover {
+    background-color: #ff7043; /* Darker orange color when hovered */
+}
+
+/* Services Section */
+#services {
+    background-color: #36056a;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between each box */
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+}
+
+.service-box {
+    width: 30%;
+    background-color: #0a022f;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    color: orange;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.service-box:hover {
+    background-color: #3b0b4a; /* Change background color on hover */
+    transition: background-color 0.3s ease;
+}
+
+.service-box:hover h3 {
+    color: white; /* Change heading color on hover */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-bottom: auto;
+    width: 100%;
+}
