@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function openGmailDraft(event) {
+      event.preventDefault();  // Prevent the form from submitting
+
+      var name = document.getElementById("name").value;  // Get the name from the form
+      var email = document.getElementById("email").value;  // Get the email from the form
+      var message = document.getElementById("message").value;  // Get the message from the form
+
+      // Create the Gmail compose URL with dynamic subject and body
+      var mailtoLink = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=komalthutte1998@gmail.com&su=Message%20from%20" + encodeURIComponent(name) + 
+                       "&body=From:%20" + encodeURIComponent(email) + "%0A%0AMessage:%20" + encodeURIComponent(message);
+
+      // Open Gmail's compose window with the pre-filled email
+      window.location.href = mailtoLink;
+    }
+  </script>
 </head>
 <body>
   <!-- Header Section -->
@@ -19,7 +35,7 @@
         <li><a href="service.html">Services</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Github</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -27,20 +43,13 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+    <h1><span class="about">Contact </span><span class="me">Us.</span></h1>
+    <form onsubmit="openGmailDraft(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 My Portfolio</p>
-  </footer>
 </body>
 </html>
